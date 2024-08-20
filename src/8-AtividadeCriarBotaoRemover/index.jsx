@@ -44,22 +44,6 @@ import Header from "./components/Header";
 
 import Footer from "./components/Footer"; 
 
-export default function Pagina(){
-    return(
-        <div>
-            <Header titulo={"Meu Cabeçalho"} /> 
-        </div>
-    );
-}
-
-export default function Pagina(){
-    return(
-        <div>
-            <Footer desenvolvedor={"Meu Rodapé"} /> 
-        </div>
-    );
-}
-
 
 export default function Home() {
     const [listaProdutos, setProdutos] = useState([
@@ -127,6 +111,7 @@ const removerItemPedidos = (id)=> {
 
 return(
   <div>
+       <Header titulo={"Meu Cabeçalho"} />
        <h1>Stylish Clothes</h1>
        {
     listaProdutos.map((produto) => 
@@ -148,6 +133,7 @@ return(
   </div>
     )
 }
+<Footer desenvolvedor={"Meu Rodapé"} /> 
 </div>
 );
 }
